@@ -190,7 +190,6 @@ export const education = [
     period: "1995 - 1997",
     location: "Sindh, Pakistan",
     achievements: [
-      "Score: 58%",
       "Stream: Pre-Engineering"
     ]
   },
@@ -201,7 +200,6 @@ export const education = [
     period: "Completed 1995",
     location: "Sindh, Pakistan",
     achievements: [
-      "Score: 69.05%",
       "Group: Science"
     ]
   }
