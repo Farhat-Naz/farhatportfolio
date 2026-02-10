@@ -8,8 +8,8 @@ export const personalInfo = {
 
 
   social: {
-    github: "https://github.com/farhatnaz",
-    linkedin: "https://linkedin.com/in/farhatnaz",
+    github: "https://github.com/Farhat-Naz",
+    linkedin: "https://www.linkedin.com/in/farhat-naz",
     twitter: "",
     portfolio: ""
   }
