@@ -100,7 +100,7 @@ export const projects = [
     image: "/projects/ecommerce.jpg",
     technologies: ["HTML", "ASP", "SQL Server", "JavaScript"],
     liveUrl: "",
-    githubUrl: "",
+    githubUrl: "https://github.com/Farhat-Naz/htemp1",
     featured: false
   },
   {
