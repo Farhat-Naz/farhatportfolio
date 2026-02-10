@@ -70,12 +70,12 @@ const Hero = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 relative z-10"
       >
         <div className="text-center">
           <motion.div variants={itemVariants} className="mb-6">
             <motion.h1
-              className="text-5xl md:text-7xl font-bold mb-4"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4"
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
@@ -85,7 +85,7 @@ const Hero = () => {
             </motion.h1>
             <motion.h2
               variants={itemVariants}
-              className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 font-medium"
+              className="text-base sm:text-xl md:text-3xl text-gray-700 dark:text-gray-300 font-medium px-2"
             >
               {personalInfo.title}
             </motion.h2>
@@ -93,7 +93,7 @@ const Hero = () => {
 
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12 text-center px-4 whitespace-pre-line"
+            className="text-sm sm:text-base md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8 text-center px-4 whitespace-pre-line"
           >
             {personalInfo.bio}
           </motion.p>

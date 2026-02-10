@@ -30,13 +30,13 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-20 bg-white dark:bg-gray-900" ref={ref}>
+    <section id="experience" className="pt-10 pb-20 bg-white dark:bg-gray-900" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-8 md:mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -52,7 +52,7 @@ const Experience = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="space-y-12"
+          className="space-y-6 md:space-y-12"
         >
           {experience.map((job, index) => (
             <motion.div
@@ -84,14 +84,14 @@ const Experience = () => {
                 {/* Content */}
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="flex-1 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-purple-900/20 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                  className="flex-1 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-purple-900/20 rounded-xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow"
                 >
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-2">
                         {job.role}
                       </h3>
-                      <p className="text-xl text-purple-600 dark:text-purple-400 font-semibold mb-2">
+                      <p className="text-base md:text-xl text-purple-600 dark:text-purple-400 font-semibold mb-2">
                         {job.company}
                       </p>
                     </div>
