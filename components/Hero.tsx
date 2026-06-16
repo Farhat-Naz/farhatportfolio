@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50 dark:from-gray-900 dark:via-blue-900 dark:to-gray-900"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50 dark:from-gray-900 dark:via-blue-900 dark:to-gray-900 pt-16"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -70,7 +70,7 @@ const Hero = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10 relative z-10"
+        className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10"
       >
         <div className="text-center">
           <motion.div variants={itemVariants} className="mb-6">
@@ -171,21 +171,21 @@ const Hero = () => {
             </motion.button>
           </motion.div>
         </div>
+      </motion.div>
 
-        {/* Scroll indicator */}
+      {/* Scroll indicator — anchored to section bottom */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+      >
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          className="w-6 h-10 border-2 border-blue-600 rounded-full flex justify-center"
         >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-blue-600 rounded-full flex justify-center"
-          >
-            <motion.div className="w-2 h-2 bg-blue-600 rounded-full mt-2" />
-          </motion.div>
+          <motion.div className="w-2 h-2 bg-blue-600 rounded-full mt-2" />
         </motion.div>
       </motion.div>
     </section>
