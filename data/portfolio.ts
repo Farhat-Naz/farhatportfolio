@@ -150,7 +150,7 @@ export const skills = {
   "AI & Machine Learning": [
     { name: "Agentic AI", level: 85 },
     { name: "OpenAI SDK", level: 90 },
-    { name: "ChatGPT Integration", level: 85 },
+    { name: "ChatGPT", level: 85 },
     { name: "AI Chatbots", level: 90 },
     { name: "MCP SDK", level: 80 },
     { name: "Agents SDK", level: 85 }
