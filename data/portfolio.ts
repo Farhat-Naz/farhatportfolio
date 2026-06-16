@@ -166,6 +166,7 @@ export const skills = {
   "Backend & Databases": [
     { name: "PostgreSQL", level: 90 },
     { name: "SQL Server", level: 90 },
+    { name: "MongoDB", level: 85 },
     { name: "SQLModel", level: 85 },
     { name: "Neon DB", level: 80 },
     { name: "Sanity CMS", level: 85 }
