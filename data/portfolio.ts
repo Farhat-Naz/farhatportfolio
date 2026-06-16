@@ -4,6 +4,7 @@ export const personalInfo = {
   email: "ffarhatnazz@hotmail.com",
   phone: "+92-314-2062716",
   location: "Karachi, Pakistan",
+  
   bio: "Computer Systems Engineer with 8+ years of professional experience in data coordination and credit analysis. Currently specializing in AI-powered applications, full-stack web development, and cloud-native architectures. Experienced in building intelligent systems using Next.js, FastAPI, and modern AI technologies including Agentic AI, OpenAI SDK, and conversational interfaces.",
 
 
@@ -128,7 +129,7 @@ export const projects = [
     title: "Blog Website",
     description: "A static blog website showcasing articles and content with a clean, modern design.",
     image: "/projects/blog.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Static Site"],
+    technologies: [],
     liveUrl: "https://blogwebsite-wheat-five.vercel.app/",
     githubUrl: "",
     featured: true
@@ -138,7 +139,7 @@ export const projects = [
     title: "One Link All Commands",
     description: "A handy static reference site centralizing all essential developer commands and links in one place.",
     image: "/projects/commands.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Static Site"],
+    technologies: [],
     liveUrl: "https://one-link-all-commands.vercel.app/",
     githubUrl: "",
     featured: true
