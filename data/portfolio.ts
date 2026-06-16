@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "ffarhatnazz@hotmail.com",
   phone: "+92-314-2062716",
   location: "Karachi, Pakistan",
-  bio: "Computer Systems Engineer with 8+ years of professional experience in data coordination and credit analysis.Currently specializing in AI-powered applications, full-stack web development, and cloud-native architectures.Experienced in building intelligent systems using Next.js, FastAPI, and modern AI technologies including Agentic AI, OpenAI SDK, and conversational interfaces.\n\n",
+  bio: "Computer Systems Engineer with 8+ years of professional experience in data coordination and credit analysis. Currently specializing in AI-powered applications, full-stack web development, and cloud-native architectures. Experienced in building intelligent systems using Next.js, FastAPI, and modern AI technologies including Agentic AI, OpenAI SDK, and conversational interfaces.",
 
 
   social: {
@@ -112,6 +112,36 @@ export const projects = [
     liveUrl: "",
     githubUrl: "",
     featured: false
+  },
+  {
+    id: 6,
+    title: "WhatsApp Integration via OpenClaw & AWS Gateway",
+    description: "Built WhatsApp messaging integrations using OpenClaw (open-source LLM gateway) and AWS API Gateway. Enables AI-powered conversational flows and automated messaging through cloud-native architecture.",
+    image: "/projects/whatsapp-integration.jpg",
+    technologies: ["OpenClaw", "AWS API Gateway", "WhatsApp API", "Python", "FastAPI", "Cloud-Native"],
+    liveUrl: "",
+    githubUrl: "https://github.com/Farhat-Naz",
+    featured: true
+  },
+  {
+    id: 7,
+    title: "Blog Website",
+    description: "A static blog website showcasing articles and content with a clean, modern design.",
+    image: "/projects/blog.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Static Site"],
+    liveUrl: "https://blogwebsite-wheat-five.vercel.app/",
+    githubUrl: "",
+    featured: true
+  },
+  {
+    id: 8,
+    title: "One Link All Commands",
+    description: "A handy static reference site centralizing all essential developer commands and links in one place.",
+    image: "/projects/commands.jpg",
+    technologies: ["HTML", "CSS", "JavaScript", "Static Site"],
+    liveUrl: "https://one-link-all-commands.vercel.app/",
+    githubUrl: "",
+    featured: true
   }
 ];
 
@@ -145,6 +175,7 @@ export const skills = {
     { name: "Helm", level: 75 },
     { name: "Kafka", level: 75 },
     { name: "Dapr", level: 75 },
+    { name: "AWS", level: 80 },
     { name: "DigitalOcean", level: 80 },
     { name: "Vercel", level: 90 }
   ],
@@ -152,7 +183,10 @@ export const skills = {
     { name: "Clerk", level: 85 },
     { name: "REST APIs", level: 90 },
     { name: "API Integration", level: 90 },
-    { name: "OAuth", level: 80 }
+    { name: "OAuth", level: 80 },
+    { name: "OpenClaw", level: 80 },
+    { name: "AWS API Gateway", level: 80 },
+    { name: "WhatsApp API", level: 80 }
   ],
   "Development Practices": [
     { name: "Spec-Driven Development", level: 90 },

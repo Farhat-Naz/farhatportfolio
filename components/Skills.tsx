@@ -47,7 +47,7 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Skills & Technologies
             </span>
           </h2>
@@ -66,7 +66,7 @@ const Skills = () => {
             <motion.div
               key={category}
               variants={categoryVariants}
-              className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-purple-900/20 rounded-xl p-6 shadow-lg"
+              className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-blue-900/20 rounded-xl p-6 shadow-lg"
             >
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                 {category}
@@ -82,7 +82,7 @@ const Skills = () => {
                       <span className="text-gray-700 dark:text-gray-300 font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-purple-600 dark:text-purple-400 font-semibold">
+                      <span className="text-blue-600 dark:text-blue-400 font-semibold">
                         {skill.level}%
                       </span>
                     </div>
@@ -95,7 +95,7 @@ const Skills = () => {
                           delay: catIndex * 0.2 + index * 0.1,
                           ease: 'easeOut',
                         }}
-                        className="h-full bg-gradient-to-r from-purple-600 to-pink-600 rounded-full relative overflow-hidden"
+                        className="h-full bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full relative overflow-hidden"
                       >
                         <motion.div
                           animate={{
@@ -148,7 +148,7 @@ const Skills = () => {
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 1 + index * 0.05 }}
                 whileHover={{ scale: 1.1, rotate: 5 }}
-                className="px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full shadow-md hover:shadow-lg hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:text-white transition-all cursor-default"
+                className="px-4 py-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full shadow-md hover:shadow-lg hover:bg-gradient-to-r hover:from-blue-600 hover:to-indigo-600 hover:text-white transition-all cursor-default"
               >
                 {tech}
               </motion.span>

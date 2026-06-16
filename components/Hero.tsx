@@ -40,7 +40,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-purple-900 dark:to-gray-900"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50 dark:from-gray-900 dark:via-blue-900 dark:to-gray-900"
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -48,14 +48,14 @@ const Hero = () => {
           variants={floatingVariants}
           initial="initial"
           animate="animate"
-          className="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 dark:opacity-30"
+          className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 dark:opacity-30"
         />
         <motion.div
           variants={floatingVariants}
           initial="initial"
           animate="animate"
           transition={{ delay: 1 }}
-          className="absolute top-40 right-10 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 dark:opacity-30"
+          className="absolute top-40 right-10 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 dark:opacity-30"
         />
         <motion.div
           variants={floatingVariants}
@@ -79,7 +79,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
-              <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 bg-clip-text text-transparent">
                 {personalInfo.name}
               </span>
             </motion.h1>
@@ -109,7 +109,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <FaGithub size={32} />
               </motion.a>
@@ -121,7 +121,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <FaLinkedin size={32} />
               </motion.a>
@@ -133,7 +133,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <FaTwitter size={32} />
               </motion.a>
@@ -142,7 +142,7 @@ const Hero = () => {
               href={`mailto:${personalInfo.email}`}
               whileHover={{ scale: 1.2, rotate: 360 }}
               transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-              className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
             >
               <FaEnvelope size={32} />
             </motion.a>
@@ -155,7 +155,7 @@ const Hero = () => {
               }
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow"
+              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-shadow"
             >
               Get In Touch
             </motion.button>
@@ -165,7 +165,7 @@ const Hero = () => {
               }
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 border-2 border-purple-600 text-purple-600 dark:text-purple-400 rounded-full font-medium hover:bg-purple-600 hover:text-white transition-all"
+              className="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-full font-medium hover:bg-blue-600 hover:text-white transition-all"
             >
               View Projects
             </motion.button>
@@ -182,9 +182,9 @@ const Hero = () => {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-purple-600 rounded-full flex justify-center"
+            className="w-6 h-10 border-2 border-blue-600 rounded-full flex justify-center"
           >
-            <motion.div className="w-2 h-2 bg-purple-600 rounded-full mt-2" />
+            <motion.div className="w-2 h-2 bg-blue-600 rounded-full mt-2" />
           </motion.div>
         </motion.div>
       </motion.div>

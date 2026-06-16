@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-purple-900 dark:to-gray-900"
+      className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50 dark:from-gray-900 dark:via-blue-900 dark:to-gray-900"
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
@@ -67,7 +67,7 @@ const Projects = () => {
               className="group relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all"
             >
               {/* Project Image Placeholder */}
-              <div className="relative h-48 bg-gradient-to-br from-purple-400 to-pink-400 overflow-hidden">
+              <div className="relative h-48 bg-gradient-to-br from-blue-400 to-indigo-400 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <motion.div
                     initial={{ scale: 0 }}
@@ -85,7 +85,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.2 }}
-                      className="p-3 bg-white rounded-full text-gray-900 hover:bg-purple-600 hover:text-white transition-colors"
+                      className="p-3 bg-white rounded-full text-gray-900 hover:bg-blue-600 hover:text-white transition-colors"
                     >
                       <FaGithub size={24} />
                     </motion.a>
@@ -96,7 +96,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.2 }}
-                      className="p-3 bg-white rounded-full text-gray-900 hover:bg-purple-600 hover:text-white transition-colors"
+                      className="p-3 bg-white rounded-full text-gray-900 hover:bg-blue-600 hover:text-white transition-colors"
                     >
                       <FaExternalLinkAlt size={24} />
                     </motion.a>
@@ -106,7 +106,7 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -120,7 +120,7 @@ const Projects = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={isInView ? { opacity: 1, scale: 1 } : {}}
                       transition={{ delay: index * 0.2 + i * 0.1 + 0.5 }}
-                      className="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium"
                     >
                       {tech}
                     </motion.span>
